@@ -51,7 +51,7 @@ const Register = () => {
     }
     try {
       const response = await axios.post(
-        "https://loginapp-server.vercel.app/api/user/signUp",
+        "https://loginapp-server.vercel.app/api/user/signup",
         formData
       );
       if (response.status === 200) {
