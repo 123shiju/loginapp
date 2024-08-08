@@ -43,7 +43,7 @@ const register = async (req, res) => {
       .status(200)
       .json({ message: "User registered successfully", token });
   } catch (error) {
-    console.error(err.message);
+    console.error(error.message);
     res.status(500).send("server error");
   }
 };
