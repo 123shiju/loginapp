@@ -43,7 +43,7 @@ const Login = () => {
     const token = localStorage.getItem("token");
     try {
       const response = await axios.post(
-        "https://loginapp-server.vercel.app/api/user/signin",
+        "https://loginapp-server.vercel.app/api/signin",
         formData,
         {
           headers: {
