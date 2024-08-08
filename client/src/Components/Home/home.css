@@ -1,0 +1,109 @@
+.background-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("https://etlhive.com/wp-content/uploads/2024/03/Bold-Sale-Brand-Website-Homepage-Banner.jpg")
+    no-repeat bottom left;
+  background-size: cover;
+  background-color: #f2f2f2;
+}
+.navbar img {
+  width: 135px;
+  margin-left: 8px;
+}
+
+.background-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+.row {
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+.title {
+  width: 400px;
+  text-wrap: pretty;
+  text-align: left;
+  margin: 50px;
+  color: gray;
+  margin-bottom: 0px;
+}
+.midtitle {
+  color: #fff;
+  margin: 50px;
+  text-align: left;
+  text-wrap: pretty;
+  width: 454px;
+  font-size: 56px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.midtitle u {
+  color: #6022ea;
+  text-decoration: none;
+  padding-bottom: 15px;
+}
+.subtitle {
+  text-align: left;
+  font-size: 16px;
+  margin: 50px;
+  color: gray;
+  text-wrap: pretty;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.topnavbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: black;
+  padding: 10px;
+  z-index: 1000;
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  color: #f2f2f2;
+  text-decoration: none;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.topnavbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.left-section a,
+.right-section a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  display: flex;
+  align-items: center;
+}
+
+.left-section i,
+.right-section i {
+  margin-right: 8px;
+}
+
+.left-section {
+  display: flex;
+  gap: 15px;
+}
+
+.right-section {
+  display: flex;
+  gap: 15px;
+}
+.section img {
+  width: 150px;
+  height: 50px;
+}
