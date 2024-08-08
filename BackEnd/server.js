@@ -10,10 +10,18 @@ const app = express();
 connectDB();
 
 app.use(express.json());
+app.options('*', cors({
+  origin: "https://loginapp-client.vercel.app",
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+  credentials: true
+}));
+
 app.use(cors({
   origin: "https://loginapp-client.vercel.app",
-   methods: ["GET", "POST", "PUT", "DELETE"],
+  methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"],
+  credentials: true
 }));
 
 app.use("/api", userRoute);
