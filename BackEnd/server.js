@@ -16,15 +16,7 @@ app.options('*', cors({
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true
 }));
-app.options('*', cors());
-app.use(
-  cors({
-    origin:["https://loginapp-client.vercel.app"],
-    methods: ["GET", "POST"],
-    allowedHeaders: ["Content-Type", "Authorization"],
-    credentials: true 
-  })
-);
+
 app.use("/api/user", userRoute);
 
 const PORT = process.env.PORT || 5000;
