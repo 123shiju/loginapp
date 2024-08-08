@@ -12,7 +12,7 @@ connectDB();
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://loginapp-client.vercel.app/",
+    origin: "https://loginapp-client.vercel.app",
     methods:['POST','GET','PUT','DELETE'],
     credential:true
   })
