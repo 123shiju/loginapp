@@ -17,7 +17,7 @@ app.options('*', cors({
   credentials: true
 }));
 
-app.use("/api/user", userRoute);
+app.use("/api", userRoute);
 
 const PORT = process.env.PORT || 5000;
 
