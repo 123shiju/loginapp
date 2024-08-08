@@ -18,6 +18,9 @@ app.use(
   })
 );
 app.use("/api/user", userRoute);
+app.get('/',(req,res)=>{
+res.json("Hello")
+}
 
 const PORT = process.env.PORT || 5000;
 
