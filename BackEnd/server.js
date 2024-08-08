@@ -13,8 +13,8 @@ app.use(express.json());
 app.use(
   cors({
     origin:["https://loginapp-client.vercel.app"],
-    methods:['POST','GET'],
-    credential:true
+     methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
 app.use("/api/user", userRoute);
